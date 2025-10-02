@@ -133,6 +133,19 @@
                         <span class="skill-badge" id="intLabel7">Intermediate</span>
                     </div>
                 </div>
+
+                <div class="skill-category-card">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="Design" class="category-image">
+                    <h3 class="category-title" id="designSkills">Design & Marketing</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Canva</span>
+                        <span class="skill-badge" id="intLabel8">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name" id="socialMedia">Social Media Management</span>
+                        <span class="skill-badge basic" id="basicLabel2">Basic</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -210,6 +223,8 @@
                 mobileDev: "Mobile Development",
                 progLangs: "Programming Languages",
                 backendServices: "Backend & Services",
+                designSkills: "Design & Marketing",
+                socialMedia: "Social Media Management",
                 advLabel: "Advanced",
                 intLabel: "Intermediate",
                 basicLabel: "Basic",
@@ -228,65 +243,72 @@
                 getInTouchBtn: "Entre em Contato",
                 viewSkillsBtn: "Ver Competências",
                 aboutSubtitle: "Apaixonado por criar soluções mobile inovadoras e expandir constantemente a minha experiência técnica",
-                            devTitle: "Desenvolvedor",
-                            devDesc: "Desenvolvimento avançado em Android com sólidos fundamentos em Java e arquiteturas modernas de aplicativos móveis",
-                            crossTitle: "Especialista Multiplataforma",
-                            crossDesc: "Proficiente em Flutter e Dart, construindo aplicativos bonitos que funcionam perfeitamente em várias plataformas",
-                            learnerTitle: "Aprendiz Contínuo",
-                            learnerDesc: "Dedicado a aprimorar habilidades por meio de cursos online, tutoriais e projetos pessoais práticos",
-                            skillsSubtitle: "Uma visão abrangente da minha experiência e capacidades técnicas",
-                            mobileDev: "Desenvolvimento Mobile",
-                            progLangs: "Linguagens de Programação",
-                            backendServices: "Backend & Serviços",
-                            advLabel: "Avançado",
-                            intLabel: "Intermediário",
-                            basicLabel: "Básico",
-                            contactSubtitle: "Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão",
-                            contactInfoTitle: "Informações de Contato",
-                            connectTitle: "Vamos Conectar",
-                            connectDesc: "Se você tem uma pergunta, quer iniciar um projeto ou simplesmente deseja se conectar, sinta-se à vontade para entrar em contato. Farei o possível para responder!",
-                            sendEmailBtn: "Enviar Email",
-                            callMeBtn: "Ligue para Mim",
-                            footerText: "© 2024 Nélvio De Aleixo Chivale. Todos os direitos reservados.",
-                            footerBuilt: "Construído com paixão por desenvolvimento mobile"
-                        }
-                    };
-            
-                    function changeLanguage() {
-                        const lang = document.getElementById('languageSelect').value;
-                        const t = translations[lang];
-            
-                        document.getElementById('heroLabel').textContent = t.heroLabel;
-                        document.getElementById('heroSubtitle').textContent = t.heroSubtitle;
-                        document.getElementById('getInTouchBtn').textContent = t.getInTouchBtn;
-                        document.getElementById('viewSkillsBtn').textContent = t.viewSkillsBtn;
-                        document.getElementById('aboutSubtitle').textContent = t.aboutSubtitle;
-                        document.getElementById('devTitle').textContent = t.devTitle;
-                        document.getElementById('devDesc').textContent = t.devDesc;
-                        document.getElementById('crossTitle').textContent = t.crossTitle;
-                        document.getElementById('crossDesc').textContent = t.crossDesc;
-                        document.getElementById('learnerTitle').textContent = t.learnerTitle;
-                        document.getElementById('learnerDesc').textContent = t.learnerDesc;
-                        document.getElementById('skillsSubtitle').textContent = t.skillsSubtitle;
-                        document.getElementById('mobileDev').textContent = t.mobileDev;
-                        document.getElementById('progLangs').textContent = t.progLangs;
-                        document.getElementById('backendServices').textContent = t.backendServices;
-                        document.getElementById('advLabel1').textContent = t.advLabel;
-                        document.getElementById('intLabel1').textContent = t.intLabel;
-                        document.getElementById('intLabel2').textContent = t.intLabel;
-                        document.getElementById('intLabel3').textContent = t.intLabel;
-                        document.getElementById('intLabel4').textContent = t.intLabel;
-                        document.getElementById('intLabel5').textContent = t.intLabel;
-                        document.getElementById('intLabel6').textContent = t.intLabel;
-                        document.getElementById('intLabel7').textContent = t.intLabel;
-                        document.getElementById('basicLabel1').textContent = t.basicLabel;
-                        document.getElementById('contactSubtitle').textContent = t.contactSubtitle;
-                        document.getElementById('contactInfoTitle').textContent = t.contactInfoTitle;
-                        document.getElementById('connectTitle').textContent = t.connectTitle;
-                        document.getElementById('connectDesc').textContent = t.connectDesc;
-                        document.getElementById('sendEmailBtn').textContent = t.sendEmailBtn;
-                        document.getElementById('callMeBtn').textContent = t.callMeBtn;
-                        document.getElementById('footerText').textContent = t.footerText;
-                        document.getElementById('footerBuilt').textContent = t.footerBuilt;
-                    }
-                </script>
+                devTitle: "Desenvolvedor",
+                devDesc: "Desenvolvimento avançado em Android com sólidos fundamentos em Java e arquiteturas modernas de aplicativos móveis",
+                crossTitle: "Especialista Multiplataforma",
+                crossDesc: "Proficiente em Flutter e Dart, construindo aplicativos bonitos que funcionam perfeitamente em várias plataformas",
+                learnerTitle: "Aprendiz Contínuo",
+                learnerDesc: "Dedicado a aprimorar habilidades por meio de cursos online, tutoriais e projetos pessoais práticos",
+                skillsSubtitle: "Uma visão abrangente da minha experiência e capacidades técnicas",
+                mobileDev: "Desenvolvimento Mobile",
+                progLangs: "Linguagens de Programação",
+                backendServices: "Backend & Serviços",
+                designSkills: "Design & Marketing",
+                socialMedia: "Gestão de Redes Sociais",
+                advLabel: "Avançado",
+                intLabel: "Intermediário",
+                basicLabel: "Básico",
+                contactSubtitle: "Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão",
+                contactInfoTitle: "Informações de Contato",
+                connectTitle: "Vamos Conectar",
+                connectDesc: "Se você tem uma pergunta, quer iniciar um projeto ou simplesmente deseja se conectar, sinta-se à vontade para entrar em contato. Farei o possível para responder!",
+                sendEmailBtn: "Enviar Email",
+                callMeBtn: "Ligue para Mim",
+                footerText: "© 2024 Nélvio De Aleixo Chivale. Todos os direitos reservados.",
+                footerBuilt: "Construído com paixão por desenvolvimento mobile"
+            }
+        };
+
+        function changeLanguage() {
+            const lang = document.getElementById('languageSelect').value;
+            const t = translations[lang];
+
+            document.getElementById('heroLabel').textContent = t.heroLabel;
+            document.getElementById('heroSubtitle').textContent = t.heroSubtitle;
+            document.getElementById('getInTouchBtn').textContent = t.getInTouchBtn;
+            document.getElementById('viewSkillsBtn').textContent = t.viewSkillsBtn;
+            document.getElementById('aboutSubtitle').textContent = t.aboutSubtitle;
+            document.getElementById('devTitle').textContent = t.devTitle;
+            document.getElementById('devDesc').textContent = t.devDesc;
+            document.getElementById('crossTitle').textContent = t.crossTitle;
+            document.getElementById('crossDesc').textContent = t.crossDesc;
+            document.getElementById('learnerTitle').textContent = t.learnerTitle;
+            document.getElementById('learnerDesc').textContent = t.learnerDesc;
+            document.getElementById('skillsSubtitle').textContent = t.skillsSubtitle;
+            document.getElementById('mobileDev').textContent = t.mobileDev;
+            document.getElementById('progLangs').textContent = t.progLangs;
+            document.getElementById('backendServices').textContent = t.backendServices;
+            document.getElementById('designSkills').textContent = t.designSkills;
+            document.getElementById('socialMedia').textContent = t.socialMedia;
+            document.getElementById('advLabel1').textContent = t.advLabel;
+            document.getElementById('intLabel1').textContent = t.intLabel;
+            document.getElementById('intLabel2').textContent = t.intLabel;
+            document.getElementById('intLabel3').textContent = t.intLabel;
+            document.getElementById('intLabel4').textContent = t.intLabel;
+            document.getElementById('intLabel5').textContent = t.intLabel;
+            document.getElementById('intLabel6').textContent = t.intLabel;
+            document.getElementById('intLabel7').textContent = t.intLabel;
+            document.getElementById('intLabel8').textContent = t.intLabel;
+            document.getElementById('basicLabel1').textContent = t.basicLabel;
+            document.getElementById('basicLabel2').textContent = t.basicLabel;
+            document.getElementById('contactSubtitle').textContent = t.contactSubtitle;
+            document.getElementById('contactInfoTitle').textContent = t.contactInfoTitle;
+            document.getElementById('connectTitle').textContent = t.connectTitle;
+            document.getElementById('connectDesc').textContent = t.connectDesc;
+            document.getElementById('sendEmailBtn').textContent = t.sendEmailBtn;
+            document.getElementById('callMeBtn').textContent = t.callMeBtn;
+            document.getElementById('footerText').textContent = t.footerText;
+            document.getElementById('footerBuilt').textContent = t.footerBuilt;
+        }
+    </script>
+</body>
